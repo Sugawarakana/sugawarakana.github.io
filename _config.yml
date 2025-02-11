@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Junyu Jin"
   pronouns         : # example: "she/her"  
-  bio              : "26' MS ECE-CM @ Umich | 24' BS EIE-CE @ CUHKSZ"
+  bio              : "26\' MS ECE-CM @ Umich | 24\' BS EIE-CE @ CUHKSZ"
   location         : "Ann Arbor, MI, USA"
   employer         : "University of Michigan"
   uri              : # URL
@@ -50,7 +50,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
