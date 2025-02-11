@@ -13,7 +13,7 @@ title                    : "Your Name / Site Title"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : https://sugawarakana.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : "https://sugawarakana.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sugawarakana/sugawarakana.github.io"
 
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Junyu Jin"
   pronouns         : # example: "she/her"  
-  bio              : # "Short biography for the left-hand sidebar"
+  bio              : "26' MS ECE-CM @ Umich | 24' BS EIE-CE @ CUHKSZ"
   location         : "Ann Arbor, MI, USA"
   employer         : "University of Michigan"
   uri              : # URL
