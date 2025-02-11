@@ -24,8 +24,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Junyu Jin"
-  pronouns         : # example: "she/her"  
-  bio              : "26' MS ECE-CM @ Umich\n24' BS EIE-CE @ CUHKSZ"
+  pronouns         : "he/him"# example: "she/her"  
+  bio              : #"26' MS ECE-CM @ Umich\n24' BS EIE-CE @ CUHKSZ"
   location         : "Ann Arbor, MI, USA"
   employer         : "University of Michigan"
   uri              : # URL
