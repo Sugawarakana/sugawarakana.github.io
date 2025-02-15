@@ -18,7 +18,7 @@ Education
 
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2020 - Jul. 2024
 * Master of Engineering in Electronic and Information Engineering (Computer Engineering Track)
-* MGPA: 3.7 / 4.0 | CGPA: 3.6 / 4.0 | Graduated with Honors, First Class | Full Scholarship | Dean's List
+* MGPA: 3.7 / 4.0 | Graduated with Honors, First Class | Full Scholarship | Dean's List
 * Coursework: Data Structure (A), Computer Architecture (A-), Operating Systems (A-), Machine Learning, Digital Signal Processing, Database Systems, Embedded Systems,
 Work experience
 ======
