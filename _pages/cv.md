@@ -15,6 +15,7 @@ Education
 * Master of Science in Electrical and Computer Engineering (Network, Communication and Information System Track)
 * GPA: 4.0 / 4.0
 * Coursework: Probability and Random Processes (A), Communication Networks (A), Linear Systems Theory (A)
+
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2020 - Jul. 2024
 * Master of Engineering in Electronic and Information Engineering (Computer Engineering Track)
 * MGPA: 3.7 / 4.0 | CGPA: 3.6 / 4.0 | Graduated with Honors, First Class | Full Scholarship | Dean's List
