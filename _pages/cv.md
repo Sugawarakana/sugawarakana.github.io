@@ -12,13 +12,12 @@ redirect_from:
 Education
 ======
 **University of Michigan** | Aug. 2024 - Dec. 2025 (Expected) 
-
 Master of Science in Electrical and Computer Engineering (Network, Communication and Information System Track)
   * GPA: 4.0 / 4.0
   * Coursework: Probability and Random Processes (A), Communication Networks (A), Linear Systems Theory (A)
 
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2020 - Jul. 2024
-  Master of Engineering in Electronic and Information Engineering (Computer Engineering Track)
+Master of Engineering in Electronic and Information Engineering (Computer Engineering Track)
   * MGPA: 3.7 / 4.0 | First Class Honor Graduate | Full Scholarship | Dean's List
   * Coursework: Data Structure (A), Computer Architecture (A-), Operating Systems (A-), Machine Learning, Digital Signal Processing, Database Systems, Embedded Systems,
 
