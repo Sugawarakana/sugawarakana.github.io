@@ -12,7 +12,8 @@ redirect_from:
 Education
 ======
 **University of Michigan** | Aug. 2024 - Dec. 2025 (Expected) 
-  Master of Science in Electrical and Computer Engineering (Network, Communication and Information System Track)
+
+Master of Science in Electrical and Computer Engineering (Network, Communication and Information System Track)
   * GPA: 4.0 / 4.0
   * Coursework: Probability and Random Processes (A), Communication Networks (A), Linear Systems Theory (A)
 
