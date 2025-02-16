@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
+
 
 Education
 ======
@@ -47,33 +48,45 @@ Rate Adaption with Long Short Term Memory | Shenzhen, China
   * Developed NS-3 simulation framework with dynamic environment modeling, improving throughput by 15\% in static scenarios and reducing convergence time by 30\% in non-stationary conditions.
 
 **Shenzhen Institute of Artificial Intelligence and Robotics for Society** | Oct. 2022 - Feb. 2023 <br>
-Digital Twin of Unmanned Aerial Vehicles Shenzhen, China
+Digital Twin of Unmanned Aerial Vehicles | Shenzhen, China
   * Implemented an ESP32-based digital twin of the Unmanned Aerial Vehicle framework in Unity, enabling real-time 3D model synchronization via asynchronous Bluetooth communication.
   * Developed sensor fusion algorithm combining accelerometer/gyroscope data from MPU6050, implementing complementary filtering on ESP32 to reduce motion tracking latency from 1.5 to 0.5 s. 
 
-Coursework Projects
+Other Projects
 ======
+**University of Michigan** | Feb. 2025 - Feb. 2025 <br>
+LinkedIn Product Strategy Proposal | Ann Arbor, MI
+  * Competed in a Datathon with a 6-member team , analyzing historical PERM data and supplementary datasets; spearheaded end-to-end data collection, cleaning, and visualization to uncover immigration sponsorship trends, informing LinkedIn’s product strategy.
+  * Proposed a "Sponsorship Status" feature for LinkedIn’s enterprise tools, designing a scalable business model that quantified potential revenue growth (2.8% adoption-driven uplift) through stakeholder engagement analytics and sponsorship transparency.
+  * Top 4 teams by delivering actionable insights via dynamic dashboards, securing recognition for data-driven solutions in a competitive evaluation by industry experts.
 
-Other
-======
+**The Chinese University of Hong Kong, Shenzhen** | 
+
+
+**The Chinese University of Hong Kong, Shenzhen** | 
+5-stage Pipelined CPU
+
+**The Chinese University of Hong Kong, Shenzhen** | 
+
+
 
 Skills
 ======
 * **Programing Languages**
-  Python, C/C++, C#, Java, SQL, CSS, JavaScript, HTML, Bash, Markdown, R, Matlab, Verilog, VHDL
+  Python, C/C++, C#, Java, SQL, CSS, JavaScript, HTML, Bash, Markdown, LaTeX, R, Matlab, Verilog, VHDL
 * **Tools**
   PyTorch, Pandas, Matplotlib, MySQL, CUDA, Docker, Git, OpenCV, Virtuoso, Microsoft Office
-* Skill 3
+* 
 
 Service and leadership
 ======
-**CUHKSZ IEEE Student Branch** | Jul. 2023 - Jun. 2024
-  Founder and Vice Chair
-  * 1
-  * 2
-  * 3
+**CUHKSZ IEEE Student Branch** | Jul. 2022 - Jun. 2024 <br>
+Founder and Vice Chair
+  * Founded CUHKSZ IEEE Student Branch as a core team leader, driving recruitment campaigns to attract 500+ members within the first academic year.
+  * Organized career-development lectures and hosted 1:1 interviews with IEEE fellows , enhancing members’ technical communication and professional networking skills.
+  * Launched a centralized online platform for IEEE-related academic resources (e.g., research papers, project templates), improving collaboration efficiency and engagement across 300+ active users.
 
-**Chemistry Association** | Jul. 2023 - Jun. 2024
-  Founder and 
-  * 1
+**CUHKSZ ChemA Community** | Jul. 2022 - Jun. 2023
+  Founder and Academic Department
+  * 
   * 2
