@@ -14,22 +14,42 @@ Education
 **University of Michigan** | Aug. 2024 - Dec. 2025 (Expected) <br>
 Master of Science in Electrical and Computer Engineering (Network, Communication and Information System Track)
   * GPA: 4.0 / 4.0
-  * Coursework: Probability and Random Processes (A), Communication Networks (A), Linear Systems Theory (A)
+  * Relevant Coursework: Communication Networks (A), Probability and Random Processes (A), Linear Systems Theory (A)
 
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2020 - Jul. 2024 <br>
 Master of Engineering in Electronic and Information Engineering (Computer Engineering Track)
-  * MGPA: 3.7 / 4.0 | First Class Honor Graduate | Full Scholarship | Dean's List
-  * Coursework: Data Structure (A), Computer Architecture (A-), Operating Systems (A-), Machine Learning, Digital Signal Processing, Database Systems, Embedded Systems,
+  * MGPA: 3.7 / 4.0 | CGPA: 3.6 / 4.0
+  * First Class Honor Graduate | Full Scholarship
+  * Relevant Coursework: Computer and Network Security (A), Data Structures (A), Digital Signal Processing (A), Computer Architecture (A-), Operating Systems (A-), Machine Intelligence and Applications (A-), Microprocessor System Design (A-), 
 
 Work Experience
 ======
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**Pingyang Institute of Intelligent Manufacturing** | Dec. 2022 - Feb. 2023 <br>
+Research and Development Engineer Intern | Wenzhou, China
+  * Designed three elastic mechanics spatial models in ADINA with 3-/4-/6-node & polyhedral elements, achieving < 2%
+error margin through iterative triangular mesh optimization around circular holes.
+  * Built PLC control systems with servo motor coordination and PC-PLC communication protocols, reducing manual
+intervention by 30% in production line testing scenarios.
+  * Applied HIKVision Master modules for defect detection (98.7% accuracy) and QR code recognition (1300+/min through-
+put), integrated equipment data via Python scripts with 500 ms latency.
+
+**Pingyang Wasu Broadcasting Network Company** | Mar. 2022 - Apr. 2022 <br>
+Technical Operations Engineer Intern | Wenzhou, China
+  * Optimized video streaming servers through adjusting the server memory allocation strategy and Linux kernel tuning, achieving 25 FPS ±5\% stable transmission with 0.48 s average latency.    
+  * Authored a comprehensive six-page technical manual for IoT door sensors, detailing system management and alarm threshold configuration, aimed at serving more than 200,000 users nationwide.
+  * Developed Shell scripts to automate the archiving of healthcare system logs, reducing daily manual workload by 2 hours.
 
 Academic Research
 ======
+**The Chinese University of Hong Kong, Shenzhen** | Aug. 2023 - Apr. 2024 <br>
+Rate Adaption with Long Short Term Memory | Shenzhen, China
+  * Proposed LSTM-based rate adaptation algorithm for 802.11 systems, implementing real-time channel estimation through PyTorch-trained models, achieving over 90\% MCS prediction accuracy across 8 transmission rates.     
+  * Developed NS-3 simulation framework with dynamic environment modeling, improving throughput by 15\% in static scenarios and reducing convergence time by 30\% in non-stationary conditions.
+
+**Shenzhen Institute of Artificial Intelligence and Robotics for Society** | Oct. 2022 - Feb. 2023 <br>
+Digital Twin of Unmanned Aerial Vehicles Shenzhen, China
+  * Implemented an ESP32-based digital twin of the Unmanned Aerial Vehicle framework in Unity, enabling real-time 3D model synchronization via asynchronous Bluetooth communication.
+  * Developed sensor fusion algorithm combining accelerometer/gyroscope data from MPU6050, implementing complementary filtering on ESP32 to reduce motion tracking latency from 1.5 to 0.5 s. 
 
 Coursework Projects
 ======
