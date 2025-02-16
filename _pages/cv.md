@@ -10,7 +10,6 @@ redirect_from:
 {% include base_path %}
 
 <br>
-<br>
 
 Education
 ======
@@ -62,13 +61,18 @@ LinkedIn Product Strategy Proposal | Ann Arbor, MI
   * Proposed a "Sponsorship Status" feature for LinkedIn’s enterprise tools, designing a scalable business model that quantified potential revenue growth (2.8% adoption-driven uplift) through stakeholder engagement analytics and sponsorship transparency.
   * Top 4 teams by delivering actionable insights via dynamic dashboards, securing recognition for data-driven solutions in a competitive evaluation by industry experts.
 
-**The Chinese University of Hong Kong, Shenzhen** | 
+**The Chinese University of Hong Kong, Shenzhen** | Mar. 2024 - Apr. 2024 <br>
+Simulation of attack
 
+**The Chinese University of Hong Kong, Shenzhen** | Nov. 2023 - Dec. 2023 <br>
+Image signal processing
 
-**The Chinese University of Hong Kong, Shenzhen** | 
-5-stage Pipelined CPU
+**The Chinese University of Hong Kong, Shenzhen** | Sept. 2022 - Dec. 2022 <br>
+OS
 
-**The Chinese University of Hong Kong, Shenzhen** | 
+**The Chinese University of Hong Kong, Shenzhen** | Jan. 2022 - Apr. 2022 <br>
+5-stage Pipelined CPU Design | Shenzhen, China 
+
 
 
 
@@ -78,7 +82,6 @@ Skills
   Python, C/C++, C#, Java, SQL, CSS, JavaScript, HTML, Bash, Markdown, LaTeX, R, Matlab, Verilog, VHDL
 * **Tools**
   PyTorch, Pandas, Matplotlib, MySQL, CUDA, Docker, Git, OpenCV, Virtuoso, Microsoft Office
-* 
 
 Service and leadership
 ======
