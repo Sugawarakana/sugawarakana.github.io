@@ -11,6 +11,7 @@ redirect_from:
 
 <br>
 <br>
+
 Education
 ======
 **University of Michigan** | Aug. 2024 - Dec. 2025 (Expected) <br>
