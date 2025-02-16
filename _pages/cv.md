@@ -9,7 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-
+<br>
+<br>
 Education
 ======
 **University of Michigan** | Aug. 2024 - Dec. 2025 (Expected) <br>
