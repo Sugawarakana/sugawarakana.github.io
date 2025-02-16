@@ -18,8 +18,8 @@ Master of Science in Electrical and Computer Engineering (Network, Communication
 
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2020 - Jul. 2024 <br>
 Master of Engineering in Electronic and Information Engineering (Computer Engineering Track)
-  * MGPA: 3.7 / 4.0 | CGPA: 3.6 / 4.0
-  * First Class Honor Graduate | Full Scholarship
+  * MGPA: 3.7 / 4.0, CGPA: 3.6 / 4.0
+  * First Class Honor Graduate, Full Scholarship, Dean's List
   * Relevant Coursework: Computer and Network Security (A), Data Structures (A), Digital Signal Processing (A), Computer Architecture (A-), Operating Systems (A-), Machine Intelligence and Applications (A-), Microprocessor System Design (A-), 
 
 Work Experience
