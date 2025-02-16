@@ -88,5 +88,6 @@ Founder and Vice Chair
 
 **CUHKSZ ChemA Community** | Jul. 2022 - Jun. 2023
   Founder and Academic Department
-  * 
-  * 2
+  * Drafted the association charter and recruitment strategy, established the first student-led chemistry hub at CUHKSZ.
+  * Published two general explanatory articles through the official association channels, which brought more than 300 readers.
+  * Led lab immersion tours directly engaging undecided majors and attracted 100% more freshman applicants compared to previous years.
