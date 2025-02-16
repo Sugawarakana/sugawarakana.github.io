@@ -39,19 +39,21 @@ Other
 
 Skills
 ======
-* **Programing Languages** Python, C/C++, C#, Java, SQL, CSS, JavaScript, HTML, Bash, Markdown, R, Matlab, Verilog, VHDL
-* **Tools** PyTorch, Pandas, Matplotlib, MySQL, CUDA, Docker, Git, OpenCV, Virtuoso, Microsoft Office
+* **Programing Languages**
+  Python, C/C++, C#, Java, SQL, CSS, JavaScript, HTML, Bash, Markdown, R, Matlab, Verilog, VHDL
+* **Tools**
+  PyTorch, Pandas, Matplotlib, MySQL, CUDA, Docker, Git, OpenCV, Virtuoso, Microsoft Office
 * Skill 3
 
 Service and leadership
 ======
 **CUHKSZ IEEE Student Branch** | Jul. 2023 - Jun. 2024
 Founder and Vice Chair
-*1
-*2
-*3
+  * 1
+  * 2
+  * 3
 
 **Chemistry Association** | Jul. 2023 - Jun. 2024
 Founder and 
-*1
-*2
+  * 1
+  * 2
