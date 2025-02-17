@@ -78,6 +78,12 @@ Image Compression & Restoration System | Shenzhen, China
   * Designed DCT-based block compression with adaptive quantization matrix, achieving 34.9dB PSNR at 5:1 ratio
   * Built hybrid filter combining median and adaptive mean filters, improving MSE by 77.8% on Gaussian+missing-pixel noise.
 
+**The Chinese University of Hong Kong, Shenzhen** | Feb. 2023 - May 2023 <br>
+Zhihu Hot List Prediction Model Development & Data Analysis | Shenzhen, China
+  * Designed Python-based web crawlers to automate collection of Zhihu hot list attributes (views, answers, comments, etc.) from the API, applied a regularization function to adjust visit count weights enhancing feature relevance.
+  * Identified limitations of linear models (R² < 0.5) through exploratory data analysis (EDA) and proposed a 3-layer neural network (ReLU activation, dropout layers) for regression.
+  * Optimized model performance using MAE/MSE dual-loss functions, achieving a 36% improvement over baseline linear models (test MSE: 0.0079).
+
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2022 - Dec. 2022 <br>
 Operating System Core Modules Simulation in C | Shenzhen, China
   * Built process scheduler with MLFQ algorithm, reducing turnaround time by 35% through dynamic priority adjustment.
