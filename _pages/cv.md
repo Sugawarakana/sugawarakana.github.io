@@ -107,7 +107,7 @@ Founder and Vice Chair
   * Organized career-development lectures and hosted 1:1 interviews with IEEE fellows , enhancing members’ technical communication and professional networking skills.
   * Launched a centralized online platform for IEEE-related academic resources (e.g., research papers, project templates), improving collaboration efficiency and engagement across 300+ active users.
 
-**CUHKSZ ChemA Community** | Jul. 2022 - Jun. 2023
+**CUHKSZ ChemA Community** | Jul. 2022 - Jun. 2023 <br>
   Founder and Academic Department
   * Drafted the association charter and recruitment strategy, established the first student-led chemistry hub at CUHKSZ.
   * Published two general explanatory articles through the official association channels, which brought more than 300 readers.
