@@ -79,12 +79,17 @@ Image Compression & Restoration System | Shenzhen, China
   * Built hybrid filter combining median and adaptive mean filters, improving MSE by 77.8% on Gaussian+missing-pixel noise.
 
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2022 - Dec. 2022 <br>
-OS
+Operating System Core Modules Simulation in C | Shenzhen, China
+  * Built process scheduler with MLFQ algorithm, reducing turnaround time by 35% through dynamic priority adjustment.
+  * Designed virtual memory manager with page table/TLB, achieving 89% hit rate using second-chance LRU.
+  * Implemented FAT32-like file system supporting COW and fsck tools, fragmentation rate <8%.
 
 **The Chinese University of Hong Kong, Shenzhen** | Jan. 2022 - Apr. 2022 <br>
-5-stage Pipelined CPU Design | Shenzhen, China 
-
-
+5-Stage Pipelined MIPS CPU with Hazard Handling | Shenzhen, China 
+  * Implemented 32-bit MIPS CPU supporting 18 core instructions (R/I/J-type) with 5-stage pipeline.
+  * Proposed a static branch priority strategy, insert a bubble (Stall) in the ID stage and refresh the IF stage instructions, and control the risk delay cycle from 3 to 1.
+  * Designed forwarding unit to resolve structural, data and control hazards by over 99% and branch prediction logic reducing stalls by 67%.
+  
 
 
 Skills
