@@ -94,9 +94,9 @@ Operating System Core Modules Simulation in C | Shenzhen, China
 
 Skills
 ======
-* **Programing Languages**
+* **Programing Languages** <br>
   Python, C/C++, C#, Java, SQL, CSS, JavaScript, HTML, Bash, Markdown, LaTeX, R, Matlab, Verilog, VHDL
-* **Tools**
+* **Tools** <br>
   PyTorch, Pandas, Matplotlib, MySQL, CUDA, Docker, Git, OpenCV, Virtuoso, Microsoft Office
 
 Service and leadership
