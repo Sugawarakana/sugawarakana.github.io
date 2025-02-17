@@ -37,7 +37,7 @@ put), integrated equipment data via Python scripts with 500 ms latency.
 
 **Pingyang Wasu Broadcasting Network Company** | Mar. 2022 - Apr. 2022 <br>
 Technical Operations Engineer Intern | Wenzhou, China
-  * Optimized video streaming servers through adjusting the server memory allocation strategy and Linux kernel tuning, achieving 25 FPS ±5\% stable transmission with 0.48 s average latency.    
+  * Optimized video streaming servers through adjusting the server memory allocation strategy and Linux kernel tuning, achieving 25 FPS ±5% stable transmission with 0.48 s average latency.    
   * Authored a comprehensive six-page technical manual for IoT door sensors, detailing system management and alarm threshold configuration, aimed at serving more than 200,000 users nationwide.
   * Developed Shell scripts to automate the archiving of healthcare system logs, reducing daily manual workload by 2 hours.
 
@@ -45,8 +45,8 @@ Academic Research
 ======
 **The Chinese University of Hong Kong, Shenzhen** | Aug. 2023 - Apr. 2024 <br>
 Rate Adaption with Long Short Term Memory | Shenzhen, China
-  * Proposed LSTM-based rate adaptation algorithm for 802.11 systems, implementing real-time channel estimation through PyTorch-trained models, achieving over 90\% MCS prediction accuracy across 8 transmission rates.     
-  * Developed NS-3 simulation framework with dynamic environment modeling, improving throughput by 15\% in static scenarios and reducing convergence time by 30\% in non-stationary conditions.
+  * Proposed LSTM-based rate adaptation algorithm for 802.11 systems, implementing real-time channel estimation through PyTorch-trained models, achieving over 90% MCS prediction accuracy across 8 transmission rates.     
+  * Developed NS-3 simulation framework with dynamic environment modeling, improving throughput by 15% in static scenarios and reducing convergence time by 30% in non-stationary conditions.
 
 **Shenzhen Institute of Artificial Intelligence and Robotics for Society** | Oct. 2022 - Feb. 2023 <br>
 Digital Twin of Unmanned Aerial Vehicles | Shenzhen, China
@@ -82,7 +82,7 @@ Image Compression & Restoration System | Shenzhen, China
 Operating System Core Modules Simulation in C | Shenzhen, China
   * Built process scheduler with MLFQ algorithm, reducing turnaround time by 35% through dynamic priority adjustment.
   * Designed virtual memory manager with page table/TLB, achieving 89% hit rate using second-chance LRU.
-  * Implemented FAT32-like file system supporting COW and fsck tools, fragmentation rate <8%.
+  * Implemented FAT32-like file system supporting COW and fsck tools, fragmentation rate < 8%.
 
 **The Chinese University of Hong Kong, Shenzhen** | Jan. 2022 - Apr. 2022 <br>
 5-Stage Pipelined MIPS CPU with Hazard Handling | Shenzhen, China 
