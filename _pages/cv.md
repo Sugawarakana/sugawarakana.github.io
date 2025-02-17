@@ -62,10 +62,21 @@ LinkedIn Product Strategy Proposal | Ann Arbor, MI
   * Top 4 teams by delivering actionable insights via dynamic dashboards, securing recognition for data-driven solutions in a competitive evaluation by industry experts.
 
 **The Chinese University of Hong Kong, Shenzhen** | Mar. 2024 - Apr. 2024 <br>
-Simulation of attack
+Penetration Testing Lab: TCP Session Hijacking & Adaptive Firewall | Shenzhen, China
+  * Built virtual cyber range with KVM virtualization (N=hash(StudentID)%3+2), automating VLAN configuration via Python-Fabric.
+  * Developed time-driven TCP RST injection tool with Scapy, achieving 91.4% success rate by dynamic SEQ/ACK prediction.
+  * Designed stateful firewall rules with GeoIP filtering and connection tracking, reducing attack surface by 78%.
 
-**The Chinese University of Hong Kong, Shenzhen** | Nov. 2023 - Dec. 2023 <br>
-Image signal processing
+**The Chinese University of Hong Kong, Shenzhen** | Sept. 2023 - Dec. 2023 <br>
+Microprocessor Based Bouncing Ball Game | Shenzhen, China
+  * Designed real-time physics engine on STM32F4 MCU using finite-state machine architecture, implementing mode selection (easy/hard difficulty, pause) and sub-pixel level collision detection (±1px accuracy).
+  * Built Python GUI with PyQt5 to compute dynamic baud rate (SHA-1 hashed student ID → 9600–115200 bps) and validated UART timing via oscilloscope-based protocol reverse engineering, achieving 99.2% packet integrity.
+  * Architected ISR-driven synchronization with NVIC priority configuration, achieving 10ms input-response latency by DMA-accelerated framebuffer transfers (100Hz refresh rate, tested via logic analyzer).
+
+**The Chinese University of Hong Kong, Shenzhen** | Mar. 2023 - May 2023 <br>
+Image Compression & Restoration System | Shenzhen, China
+  * Designed DCT-based block compression with adaptive quantization matrix, achieving 34.9dB PSNR at 5:1 ratio
+  * Built hybrid filter combining median and adaptive mean filters, improving MSE by 77.8% on Gaussian+missing-pixel noise.
 
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2022 - Dec. 2022 <br>
 OS
