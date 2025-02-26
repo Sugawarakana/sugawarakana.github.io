@@ -73,6 +73,12 @@ Microprocessor Based Bouncing Ball Game | Shenzhen, China
   * Built Python GUI with PyQt5 to compute dynamic baud rate (SHA-1 hashed student ID → 9600–115200 bps) and validated UART timing via oscilloscope-based protocol reverse engineering, achieving 99.2% packet integrity.
   * Architected ISR-driven synchronization with NVIC priority configuration, achieving 10ms input-response latency by DMA-accelerated framebuffer transfers (100Hz refresh rate, tested via logic analyzer).
 
+**The Chinese University of Hong Kong, Shenzhen** | Oct. 2023 - Dec. 2023 <br>
+Student Information Registration System | Shenzhen, China
+  * Lead the design of relational database architecture, normalize table structure (3NF), and establish core entity relationship models such as students, courses, and users
+  * Implement a Token-based JWT authentication system, support multi-role (student/administrator) authority separation, and ensure data security.
+  * Design responsive front-end interface, output database design documents (ER diagram/SQL script), and promote team collaboration efficiency.
+
 **The Chinese University of Hong Kong, Shenzhen** | Mar. 2023 - May 2023 <br>
 Image Compression & Restoration System | Shenzhen, China
   * Designed DCT-based block compression with adaptive quantization matrix, achieving 34.9dB PSNR at 5:1 ratio
