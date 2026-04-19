@@ -13,9 +13,9 @@ redirect_from:
 
 Education
 ======
-**University of Michigan** | Aug. 2024 - Dec. 2025 (Expected) <br>
+**University of Michigan** | Aug. 2024 - May 2026 <br>
 Master of Science in Electrical and Computer Engineering (Network, Communication and Information System Track)
-  * GPA: 4.0 / 4.0
+  * GPA: 3.9 / 4.0
   * Relevant Coursework: Communication Networks (A), Probability and Random Processes (A), Linear Systems Theory (A)
 
 **The Chinese University of Hong Kong, Shenzhen** | Sept. 2020 - Jul. 2024 <br>
@@ -26,6 +26,12 @@ Master of Engineering in Electronic and Information Engineering (Computer Engine
 
 Work Experience
 ======
+**University of Michigan, Ann Arbor** | Apr. 2025 - Apr. 2026 <br>
+Graduate Research Assistant | Battery Control Group | Ann Arbor, MI
+  * Designed a high-precision battery expansion diagnostic system utilizing a PCap04 capacitance-to-digital converter and RP2040 microcontroller, achieving highly accurate capacitance measurements with an error margin of under 0.5%.
+  * Developed firmware via Arduino to establish reliable multi-protocol sensor communication (CAN, I2C, ADC) at a 1Hz sampling rate, and built a Python-based data acquisition (DAQ) system for real-time logging and analysis.
+  * Engineered a custom printed circuit board (PCB) using EAGLE to integrate 4 distinct gas sensors for in-motion dynamic testing; implemented a robust power management architecture to coordinate diverse operating voltages across the board.
+
 **Pingyang Institute of Intelligent Manufacturing** | Dec. 2022 - Feb. 2023 <br>
 Research and Development Engineer Intern | Wenzhou, China
   * Designed three elastic mechanics spatial models in ADINA with 3-/4-/6-node & polyhedral elements, achieving < 2%
@@ -35,11 +41,11 @@ intervention by 30% in production line testing scenarios.
   * Applied HIKVision Master modules for defect detection (98.7% accuracy) and QR code recognition (1300+/min through-
 put), integrated equipment data via Python scripts with 500 ms latency.
 
-**Pingyang Wasu Broadcasting Network Company** | Mar. 2022 - Apr. 2022 <br>
+**Pingyang Wasu Broadcasting Network Company** | Mar. 2022 - Dec. 2022 <br>
 Technical Operations Engineer Intern | Wenzhou, China
-  * Optimized video streaming servers through adjusting the server memory allocation strategy and Linux kernel tuning, achieving 25 FPS ±5% stable transmission with 0.48 s average latency.    
-  * Authored a comprehensive six-page technical manual for IoT door sensors, detailing system management and alarm threshold configuration, aimed at serving more than 200,000 users nationwide.
-  * Developed Shell scripts to automate the archiving of healthcare system logs, reducing daily manual workload by 2 hours.
+  * Configured virtualization on a Linux host using VirtualBox, allocating 4 independent virtual machine nodes to construct a simulated multi-node network for set-top box (STB) multimedia signal distribution.
+  * Executed system-level performance testing for STB screen-casting capabilities; quantified and analyzed key metrics including video frame rates and end-to-end network latency to evaluate system throughput and streaming stability.
+  * Contributed to a Smart Healthcare IoT door system by analyzing interaction logic across computer vision-based fall detection, Alibaba Cloud storage, and admin/client UIs; authored comprehensive technical and user documentation.
 
 Academic Research
 ======
@@ -55,11 +61,11 @@ Digital Twin of Unmanned Aerial Vehicles | Shenzhen, China
 
 Other Projects
 ======
-**University of Michigan** | Feb. 2025 - Feb. 2025 <br>
-LinkedIn Product Strategy Proposal | Ann Arbor, MI
-  * Competed in a Datathon with a 6-member team , analyzing historical PERM data and supplementary datasets; spearheaded end-to-end data collection, cleaning, and visualization to uncover immigration sponsorship trends, informing LinkedIn’s product strategy.
-  * Proposed a "Sponsorship Status" feature for LinkedIn’s enterprise tools, designing a scalable business model that quantified potential revenue growth (2.8% adoption-driven uplift) through stakeholder engagement analytics and sponsorship transparency.
-  * Top 4 teams by delivering actionable insights via dynamic dashboards, securing recognition for data-driven solutions in a competitive evaluation by industry experts.
+**University of Michigan Business+Tech & Deloitte Datathon** | Feb. 2025 <br>
+Employment Based Immigration Analysis: LinkedIn Product Strategy and Revenue Prediction | Ann Arbor, MI
+  * Engineered data processing pipelines using Python (Pandas) to aggregate and clean over 1 million historical records (2015–2024) from H-1B/PERM visa datasets and LinkedIn financial reports, analyzing talent mobility and market demands.
+  * Uncovered key insights on AI talent retention by engineering features like PERM certification rates and expiration rates; built a predictive model to forecast Premium subscription growth driven by proposed product features.
+  * Designed interactive Power BI dashboards to visualize talent-policy dynamics; presented data-driven product recommendations to Deloitte judges, securing 4th place out of 50+ competing teams (strategic insight highly validated by LinkedIn’s subsequent official feature rollout).
 
 **The Chinese University of Hong Kong, Shenzhen** | Mar. 2024 - Apr. 2024 <br>
 Penetration Testing Lab: TCP Session Hijacking & Adaptive Firewall | Shenzhen, China
