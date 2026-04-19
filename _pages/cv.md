@@ -106,10 +106,16 @@ Operating System Core Modules Simulation in C | Shenzhen, China
 
 Skills
 ======
-* **Programing Languages** <br>
-  Python, C/C++, C#, Java, SQL, CSS, JavaScript, HTML, Bash, Markdown, LaTeX, R, Matlab, Verilog, VHDL
-* **Tools** <br>
-  PyTorch, Pandas, Matplotlib, MySQL, CUDA, Docker, Git, OpenCV, Virtuoso, Microsoft Office
+* **Languages** <br>
+  Python · C/C++ · Java · Go · C# · JavaScript · SQL · Scala · Bash
+* **ML / AI** <br>
+  PyTorch · OpenCV · CUDA · HuggingFace · Pandas · Matplotlib
+* **Embedded** <br>
+  C/C++ · RTOS · Verilog · VHDL · LabVIEW · Virtuoso
+* **Web & Backend** <br>
+  Node.js · React · .NET · REST API · MongoDB · MySQL · Redis
+* **Cloud & DevOps** <br>
+  AWS · Docker · Kubernetes · Linux · Git
 
 Service and leadership
 ======
