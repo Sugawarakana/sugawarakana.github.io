@@ -1,0 +1,175 @@
+---
+permalink: /
+title: "About me"
+excerpt: "About me"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+<style>
+.about-intro {
+  font-size: 1.05em;
+  line-height: 1.75;
+  color: #2c3e50;
+  margin-bottom: 1.6em;
+}
+.about-intro strong { color: #2a7899; }
+
+.about-status {
+  display: inline-flex;
+  align-items: center;
+  gap: .5em;
+  background: #eafaf1;
+  border: 1px solid #a9dfbf;
+  color: #1e8449;
+  font-size: .82em;
+  font-weight: 700;
+  padding: .3em .85em;
+  border-radius: 20px;
+  margin-bottom: 1.4em;
+}
+.about-status::before {
+  content: '';
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #27ae60;
+  animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .4; transform: scale(1.3); }
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: .85em;
+  margin-bottom: 1.8em;
+}
+.about-card {
+  background: #f8fbfd;
+  border: 1px solid #dde8ee;
+  border-radius: 10px;
+  padding: .9em 1em;
+  text-align: center;
+}
+.about-card .ac-icon { font-size: 1.5em; margin-bottom: .3em; }
+.about-card .ac-label {
+  font-size: .72em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: #7a8288;
+  margin-bottom: .2em;
+}
+.about-card .ac-value {
+  font-size: .88em;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.about-interests {
+  margin-bottom: 1.6em;
+}
+.about-interests h3 {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #7a8288;
+  margin-bottom: .7em;
+  font-weight: 700;
+}
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+}
+.interest-tag {
+  font-size: .82em;
+  padding: .22em .75em;
+  border-radius: 20px;
+  border: 1px solid #dde8ee;
+  color: #2c3e50;
+  background: #fff;
+}
+.interest-tag.active {
+  background: #e6f4fb;
+  border-color: #3b9ec9;
+  color: #2a7899;
+  font-weight: 600;
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6em;
+}
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  font-size: .84em;
+  font-weight: 600;
+  padding: .35em .9em;
+  border-radius: 6px;
+  border: 1.5px solid #3b9ec9;
+  color: #2a7899;
+  text-decoration: none;
+  transition: all .18s;
+  background: #fff;
+}
+.about-link:hover {
+  background: #3b9ec9;
+  color: #fff;
+}
+</style>
+
+<div class="about-status">Open to Full-Time Opportunities</div>
+
+<div class="about-intro">
+Hi, I'm <strong>Junyu Jin</strong> — you can call me <strong>Bruce</strong>.<br>
+I'm an ECE Master's graduate from the <strong>University of Michigan</strong> (GPA 3.9), with a B.E. from <strong>CUHK, Shenzhen</strong> (First Class Honors). My work spans <strong>ML engineering</strong>, <strong>embedded systems</strong>, <strong>backend development</strong>, and <strong>network security</strong> — I like building things that are fast, reliable, and close to the hardware.
+</div>
+
+<div class="about-cards">
+  <div class="about-card">
+    <div class="ac-icon">🎓</div>
+    <div class="ac-label">Degree</div>
+    <div class="ac-value">M.S. ECE · UMich</div>
+  </div>
+  <div class="about-card">
+    <div class="ac-icon">📍</div>
+    <div class="ac-label">Location</div>
+    <div class="ac-value">Ann Arbor, MI</div>
+  </div>
+  <div class="about-card">
+    <div class="ac-icon">💻</div>
+    <div class="ac-label">Primary Stack</div>
+    <div class="ac-value">Python · C/C++ · Go</div>
+  </div>
+  <div class="about-card">
+    <div class="ac-icon">🌐</div>
+    <div class="ac-label">Languages</div>
+    <div class="ac-value">English · Chinese · Japanese (N1)</div>
+  </div>
+</div>
+
+<div class="about-interests">
+  <h3>Interests & Target Roles</h3>
+  <div class="interest-tags">
+    <span class="interest-tag active">ML Engineer</span>
+    <span class="interest-tag active">Backend Engineer</span>
+    <span class="interest-tag active">Embedded Systems</span>
+    <span class="interest-tag active">Full-Stack</span>
+    <span class="interest-tag">Computer Networks</span>
+    <span class="interest-tag">System Design</span>
+    <span class="interest-tag">Security</span>
+  </div>
+</div>
+
+<div class="about-links">
+  <a class="about-link" href="/cv/">📄 View Full CV</a>
+  <a class="about-link" href="mailto:junyujin@umich.edu">✉️ Contact Me</a>
+</div>
