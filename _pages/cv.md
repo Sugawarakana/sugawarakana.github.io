@@ -10,322 +10,482 @@ redirect_from:
 {% include base_path %}
 
 <style>
-.cv-section {
-  margin-bottom: 2.2em;
+:root {
+  --accent:       #3b9ec9;
+  --accent-light: #e6f4fb;
+  --accent-dark:  #2a7899;
+  --green:        #27ae60;
+  --purple:       #8e44ad;
+  --orange:       #e67e22;
+  --red:          #e74c3c;
+  --teal:         #16a085;
+  --text:         #2c3e50;
+  --muted:        #7a8288;
+  --border:       #dde8ee;
+  --bg-card:      #f8fbfd;
 }
-.cv-section h2 {
-  font-size: 1.1em;
+
+/* ── nav ── */
+.cv-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: .4em;
+  padding: .55em 0;
+  margin-bottom: 1.8em;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.cv-nav::-webkit-scrollbar { display: none; }
+.cv-nav a {
+  flex-shrink: 0;
+  font-size: .78em;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #494e52;
-  border-bottom: 2px solid #52adc8;
-  padding-bottom: 0.3em;
+  letter-spacing: .07em;
+  color: var(--muted);
+  padding: .3em .85em;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all .18s;
+}
+.cv-nav a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* ── sections ── */
+.cv-sec { margin-bottom: 2.6em; scroll-margin-top: 3em; }
+.cv-sec-title {
+  display: flex;
+  align-items: center;
+  gap: .6em;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--text);
+  margin-bottom: 1.2em;
+}
+.cv-sec-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--border), transparent);
+}
+.cv-sec-title .icon {
+  color: var(--accent);
+  font-size: 1.05em;
+}
+
+/* ── education cards ── */
+.edu-card {
+  border-left: 3px solid var(--accent);
+  background: var(--bg-card);
+  border-radius: 0 8px 8px 0;
+  padding: 1em 1.2em;
   margin-bottom: 1em;
 }
-.cv-entry {
-  margin-bottom: 1.4em;
-}
-.cv-entry-header {
+.edu-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 0.3em;
+  gap: .3em;
 }
-.cv-entry-title {
+.edu-school { font-weight: 700; font-size: .95em; color: var(--text); }
+.edu-date   { font-size: .8em; color: var(--muted); white-space: nowrap; }
+.edu-degree { font-size: .85em; color: var(--muted); margin: .2em 0 .5em; }
+.badge {
+  display: inline-block;
+  font-size: .74em;
   font-weight: 700;
-  font-size: 0.95em;
-  color: #2c3e50;
+  padding: .15em .55em;
+  border-radius: 4px;
+  margin-right: .35em;
+  margin-bottom: .25em;
 }
-.cv-entry-date {
-  font-size: 0.82em;
-  color: #7a8288;
-  white-space: nowrap;
+.badge-blue   { background: var(--accent-light); color: var(--accent-dark); }
+.badge-green  { background: #eafaf1; color: #1e8449; }
+.badge-gold   { background: #fef9e7; color: #b7950b; }
+.badge-purple { background: #f5eef8; color: #6c3483; }
+.edu-courses  { font-size: .82em; color: var(--muted); margin-top: .5em; }
+
+/* ── timeline ── */
+.timeline { position: relative; padding-left: 1.6em; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 4px; top: 6px; bottom: 6px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent) 0%, var(--border) 100%);
+  border-radius: 2px;
 }
-.cv-entry-sub {
-  font-size: 0.88em;
-  color: #52adc8;
-  margin: 0.1em 0 0.4em;
-  font-style: italic;
+.tl-item {
+  position: relative;
+  margin-bottom: 1.6em;
 }
-.cv-entry ul {
-  margin: 0.3em 0 0 1.2em;
-  padding: 0;
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -1.6em;
+  top: 5px;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2.5px solid var(--accent);
 }
-.cv-entry ul li {
-  font-size: 0.88em;
-  margin-bottom: 0.3em;
-  line-height: 1.55;
-  color: #3d4144;
-}
-.skill-group {
+.tl-header {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 0.4em;
-  margin-bottom: 0.7em;
+  gap: .3em;
+  margin-bottom: .15em;
 }
-.skill-label {
-  font-size: 0.78em;
+.tl-title { font-weight: 700; font-size: .93em; color: var(--text); }
+.tl-date  { font-size: .79em; color: var(--muted); white-space: nowrap; }
+.tl-sub   { font-size: .83em; color: var(--accent); font-style: italic; margin-bottom: .45em; }
+.tl-item ul {
+  margin: 0; padding-left: 1.1em;
+  list-style: none;
+}
+.tl-item ul li {
+  font-size: .86em;
+  line-height: 1.6;
+  color: #3d4144;
+  margin-bottom: .28em;
+  position: relative;
+}
+.tl-item ul li::before {
+  content: '›';
+  position: absolute;
+  left: -1em;
+  color: var(--accent);
+  font-weight: 700;
+}
+.highlight { color: var(--accent-dark); font-weight: 600; }
+
+/* ── project grid ── */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1em;
+}
+.proj-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1em 1.2em;
+  background: var(--bg-card);
+  transition: box-shadow .2s, transform .2s;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+.proj-card:hover {
+  box-shadow: 0 6px 20px rgba(59,158,201,.15);
+  transform: translateY(-3px);
+}
+.proj-title { font-weight: 700; font-size: .9em; color: var(--text); line-height: 1.4; }
+.proj-date  { font-size: .76em; color: var(--muted); }
+.proj-desc  { font-size: .83em; color: #4a5568; line-height: 1.55; flex: 1; }
+.proj-tags  { display: flex; flex-wrap: wrap; gap: .3em; }
+.proj-tag {
+  font-size: .72em;
+  padding: .1em .5em;
+  border-radius: 3px;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+/* ── skills ── */
+.skill-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5em;
+  margin-bottom: .85em;
+}
+.skill-cat {
+  font-size: .74em;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #7a8288;
-  min-width: 110px;
+  letter-spacing: .07em;
+  min-width: 100px;
+  padding: .25em .65em;
+  border-radius: 4px;
+  text-align: center;
 }
-.skill-tags {
+.sk-blue   { background: var(--accent-light);  color: var(--accent-dark); }
+.sk-green  { background: #eafaf1;  color: #1e8449; }
+.sk-purple { background: #f5eef8;  color: #6c3483; }
+.sk-orange { background: #fef5e7;  color: #b9770e; }
+.sk-teal   { background: #e8f8f5;  color: #0e6655; }
+.skill-chips { display: flex; flex-wrap: wrap; gap: .35em; }
+.skill-chip {
+  font-size: .81em;
+  padding: .18em .65em;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: #fff;
+}
+
+/* ── cert / leadership ── */
+.cert-item {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   flex-wrap: wrap;
-  gap: 0.35em;
+  gap: .3em;
+  padding: .6em 0;
+  border-bottom: 1px solid var(--border);
 }
-.skill-tag {
-  background: #f0f6f9;
-  border: 1px solid #c8dce6;
-  color: #2c3e50;
-  font-size: 0.8em;
-  padding: 0.15em 0.6em;
-  border-radius: 3px;
-}
+.cert-item:last-child { border-bottom: none; }
+.cert-name  { font-weight: 700; font-size: .9em; color: var(--text); }
+.cert-detail{ font-size: .82em; color: var(--muted); }
 </style>
 
-<div class="cv-section">
-<h2>Education</h2>
+<nav class="cv-nav">
+  <a href="#education">🎓 Education</a>
+  <a href="#experience">💼 Experience</a>
+  <a href="#research">🔬 Research</a>
+  <a href="#projects">🛠 Projects</a>
+  <a href="#skills">⚡ Skills</a>
+  <a href="#leadership">🏆 Leadership</a>
+</nav>
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">University of Michigan, Ann Arbor</span>
-  <span class="cv-entry-date">Aug. 2024 – May 2026</span>
-</div>
-<div class="cv-entry-sub">M.S. in Electrical and Computer Engineering &nbsp;|&nbsp; GPA: 3.9 / 4.0</div>
-<ul>
-  <li>Coursework: Communication Networks (A), Probability and Random Processes (A), Linear Systems Theory (A)</li>
-</ul>
-</div>
+<!-- ═══════════════ EDUCATION ═══════════════ -->
+<div class="cv-sec" id="education">
+<div class="cv-sec-title"><span class="icon">🎓</span> Education</div>
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">The Chinese University of Hong Kong, Shenzhen</span>
-  <span class="cv-entry-date">Sep. 2020 – Jul. 2024</span>
-</div>
-<div class="cv-entry-sub">B.E. in Electronic Information Engineering &nbsp;|&nbsp; GPA: 3.6 / 4.0 &nbsp;|&nbsp; First Class Honor, Full Scholarship, Dean's List</div>
-<ul>
-  <li>Coursework: Computer and Network Security (A), Data Structures (A), Digital Signal Processing (A), Computer Architecture (A−), Operating Systems (A−), Machine Intelligence and Applications (A−)</li>
-</ul>
-</div>
+<div class="edu-card">
+  <div class="edu-header">
+    <span class="edu-school">University of Michigan, Ann Arbor</span>
+    <span class="edu-date">Aug 2024 – May 2026</span>
+  </div>
+  <div class="edu-degree">M.S. in Electrical and Computer Engineering</div>
+  <span class="badge badge-blue">GPA 3.9 / 4.0</span>
+  <div class="edu-courses">Communication Networks · Probability & Random Processes · Linear Systems Theory</div>
 </div>
 
-<div class="cv-section">
-<h2>Work Experience</h2>
-
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">University of Michigan — Graduate Research Assistant</span>
-  <span class="cv-entry-date">Apr. 2025 – Apr. 2026</span>
-</div>
-<div class="cv-entry-sub">Battery Control Group &nbsp;|&nbsp; Ann Arbor, MI</div>
-<ul>
-  <li>Designed a high-precision battery expansion diagnostic system utilizing a PCap04 capacitance-to-digital converter and RP2040 microcontroller, achieving capacitance measurements with an error margin under 0.5%.</li>
-  <li>Developed firmware via Arduino to establish reliable multi-protocol sensor communication (CAN, I2C, ADC) at 1 Hz, and built a Python-based DAQ system for real-time logging and analysis.</li>
-  <li>Engineered a custom PCB using EAGLE to integrate 4 gas sensors for in-motion dynamic testing; implemented a robust power management architecture coordinating diverse operating voltages across the board.</li>
-</ul>
-</div>
-
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">Pingyang Institute of Intelligent Manufacturing — R&amp;D Engineer Intern</span>
-  <span class="cv-entry-date">Dec. 2022 – Feb. 2023</span>
-</div>
-<div class="cv-entry-sub">Wenzhou, China</div>
-<ul>
-  <li>Designed three elastic mechanics spatial models in ADINA with 3-/4-/6-node &amp; polyhedral elements, achieving &lt;2% error margin through iterative triangular mesh optimization around circular holes.</li>
-  <li>Built PLC control systems with servo motor coordination and PC-PLC communication protocols, reducing manual intervention by 30% in production line testing scenarios.</li>
-  <li>Applied HIKVision Master modules for defect detection (98.7% accuracy) and QR code recognition (1300+/min throughput), integrated equipment data via Python scripts with 500 ms latency.</li>
-</ul>
-</div>
-
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">Pingyang Wasu Broadcasting Network — Technical Operations Intern</span>
-  <span class="cv-entry-date">Mar. 2022 – Dec. 2022</span>
-</div>
-<div class="cv-entry-sub">Wenzhou, China</div>
-<ul>
-  <li>Configured virtualization on a Linux host using VirtualBox, allocating 4 independent VM nodes to construct a simulated multi-node network for set-top box (STB) multimedia signal distribution.</li>
-  <li>Executed system-level performance testing for STB screen-casting; quantified video frame rates and end-to-end network latency to evaluate throughput and streaming stability.</li>
-  <li>Contributed to a Smart Healthcare IoT door system by analyzing interaction logic across CV-based fall detection, Alibaba Cloud storage, and admin/client UIs; authored comprehensive technical documentation.</li>
-</ul>
+<div class="edu-card">
+  <div class="edu-header">
+    <span class="edu-school">The Chinese University of Hong Kong, Shenzhen</span>
+    <span class="edu-date">Sep 2020 – Jul 2024</span>
+  </div>
+  <div class="edu-degree">B.E. in Electronic Information Engineering</div>
+  <span class="badge badge-blue">GPA 3.6 / 4.0</span>
+  <span class="badge badge-gold">First Class Honors</span>
+  <span class="badge badge-gold">Full Scholarship</span>
+  <span class="badge badge-gold">Dean's List</span>
+  <div class="edu-courses">Computer & Network Security · Data Structures · Computer Architecture · Operating Systems · Machine Intelligence</div>
 </div>
 </div>
 
-<div class="cv-section">
-<h2>Research</h2>
+<!-- ═══════════════ EXPERIENCE ═══════════════ -->
+<div class="cv-sec" id="experience">
+<div class="cv-sec-title"><span class="icon">💼</span> Work Experience</div>
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">The Chinese University of Hong Kong, Shenzhen</span>
-  <span class="cv-entry-date">Aug. 2023 – Apr. 2024</span>
-</div>
-<div class="cv-entry-sub">Rate Adaptation with Long Short-Term Memory &nbsp;|&nbsp; Shenzhen, China</div>
-<ul>
-  <li>Proposed LSTM-based rate adaptation algorithm for 802.11 systems, implementing real-time channel estimation through PyTorch-trained models, achieving over 90% MCS prediction accuracy across 8 transmission rates.</li>
-  <li>Developed NS-3 simulation framework with dynamic environment modeling, improving throughput by 15% in static scenarios and reducing convergence time by 30% in non-stationary conditions.</li>
-</ul>
-</div>
+<div class="timeline">
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">Shenzhen Institute of AI and Robotics for Society</span>
-  <span class="cv-entry-date">Oct. 2022 – Feb. 2023</span>
-</div>
-<div class="cv-entry-sub">Digital Twin of Unmanned Aerial Vehicles &nbsp;|&nbsp; Shenzhen, China</div>
-<ul>
-  <li>Implemented an ESP32-based digital twin of the UAV framework in Unity, enabling real-time 3D model synchronization via asynchronous Bluetooth communication.</li>
-  <li>Developed sensor fusion algorithm combining accelerometer/gyroscope data from MPU6050, implementing complementary filtering on ESP32 to reduce motion tracking latency from 1.5 s to 0.5 s.</li>
-</ul>
-</div>
+<div class="tl-item">
+  <div class="tl-header">
+    <span class="tl-title">University of Michigan — Graduate Research Assistant</span>
+    <span class="tl-date">Apr 2025 – Apr 2026</span>
+  </div>
+  <div class="tl-sub">Battery Control Group · Ann Arbor, MI</div>
+  <ul>
+    <li>Designed a battery expansion diagnostic system with PCap04 CDCconverter + RP2040 MCU, achieving capacitance error <span class="highlight">&lt; 0.5%</span>.</li>
+    <li>Developed Arduino firmware for multi-protocol sensor comms (CAN, I2C, ADC) at <span class="highlight">1 Hz</span>; built Python DAQ system for real-time logging.</li>
+    <li>Engineered custom PCB in EAGLE integrating <span class="highlight">4 gas sensors</span> for in-motion testing with robust multi-voltage power management.</li>
+  </ul>
 </div>
 
-<div class="cv-section">
-<h2>Projects</h2>
-
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">UMich Business+Tech &amp; Deloitte Datathon</span>
-  <span class="cv-entry-date">Feb. 2025</span>
-</div>
-<div class="cv-entry-sub">Employment Based Immigration Analysis: LinkedIn Product Strategy &amp; Revenue Prediction</div>
-<ul>
-  <li>Engineered data processing pipelines using Python (Pandas) to aggregate and clean 1M+ historical records (2015–2024) from H-1B/PERM visa datasets and LinkedIn financial reports.</li>
-  <li>Built a predictive model to forecast Premium subscription growth; designed interactive Power BI dashboards to visualize talent-policy dynamics.</li>
-  <li>Secured 4th place out of 50+ teams; strategic insight validated by LinkedIn's subsequent official feature rollout.</li>
-</ul>
+<div class="tl-item">
+  <div class="tl-header">
+    <span class="tl-title">Pingyang Institute of Intelligent Manufacturing — R&amp;D Intern</span>
+    <span class="tl-date">Dec 2022 – Feb 2023</span>
+  </div>
+  <div class="tl-sub">Wenzhou, China</div>
+  <ul>
+    <li>Built elastic mechanics spatial models in ADINA, achieving <span class="highlight">&lt;2% error</span> via iterative mesh optimization.</li>
+    <li>Designed PLC control systems with servo motor coordination, reducing manual intervention by <span class="highlight">30%</span>.</li>
+    <li>Applied HIKVision for defect detection at <span class="highlight">98.7% accuracy</span> and QR recognition at <span class="highlight">1,300+/min</span> throughput.</li>
+  </ul>
 </div>
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">Penetration Testing Lab: TCP Session Hijacking &amp; Adaptive Firewall</span>
-  <span class="cv-entry-date">Mar. 2024 – Apr. 2024</span>
-</div>
-<ul>
-  <li>Built virtual cyber range with KVM virtualization, automating VLAN configuration via Python-Fabric.</li>
-  <li>Developed time-driven TCP RST injection tool with Scapy, achieving 91.4% success rate by dynamic SEQ/ACK prediction.</li>
-  <li>Designed stateful firewall rules with GeoIP filtering and connection tracking, reducing attack surface by 78%.</li>
-</ul>
-</div>
-
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">Microprocessor-Based Bouncing Ball Game (STM32)</span>
-  <span class="cv-entry-date">Sep. 2023 – Dec. 2023</span>
-</div>
-<ul>
-  <li>Designed real-time physics engine on STM32F4 MCU using FSM architecture with mode selection and sub-pixel collision detection (±1px accuracy).</li>
-  <li>Built Python GUI with PyQt5 for dynamic baud rate computation; validated UART timing via oscilloscope-based protocol reverse engineering, achieving 99.2% packet integrity.</li>
-  <li>Architected ISR-driven synchronization with NVIC priority config, achieving 10 ms input-response latency via DMA-accelerated framebuffer (100 Hz refresh).</li>
-</ul>
+<div class="tl-item">
+  <div class="tl-header">
+    <span class="tl-title">Pingyang Wasu Broadcasting Network — Technical Operations Intern</span>
+    <span class="tl-date">Mar 2022 – Dec 2022</span>
+  </div>
+  <div class="tl-sub">Wenzhou, China</div>
+  <ul>
+    <li>Configured VirtualBox virtualization with <span class="highlight">4 VM nodes</span> for simulated STB multimedia signal distribution.</li>
+    <li>Executed system-level performance testing on STB screen-casting: measured FPS and end-to-end network latency.</li>
+    <li>Contributed to Smart Healthcare IoT door system; authored comprehensive technical and user documentation.</li>
+  </ul>
 </div>
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">Student Information Registration System</span>
-  <span class="cv-entry-date">Oct. 2023 – Dec. 2023</span>
-</div>
-<ul>
-  <li>Designed relational database architecture normalized to 3NF with core entity models (students, courses, users).</li>
-  <li>Implemented JWT-based authentication with multi-role (student/admin) access control and responsive frontend.</li>
-</ul>
-</div>
-
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">Operating System Core Modules Simulation in C</span>
-  <span class="cv-entry-date">Sep. 2022 – Dec. 2022</span>
-</div>
-<ul>
-  <li>Built process scheduler with MLFQ algorithm, reducing turnaround time by 35% through dynamic priority adjustment.</li>
-  <li>Designed virtual memory manager with page table/TLB, achieving 89% hit rate using second-chance LRU.</li>
-  <li>Implemented FAT32-like file system supporting COW and fsck tools, fragmentation rate &lt;8%.</li>
-</ul>
-</div>
-
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">5-Stage Pipelined MIPS CPU with Hazard Handling</span>
-  <span class="cv-entry-date">Jan. 2022 – Apr. 2022</span>
-</div>
-<ul>
-  <li>Implemented 32-bit MIPS CPU supporting 18 core instructions (R/I/J-type) with full 5-stage pipeline.</li>
-  <li>Designed forwarding unit to resolve structural, data and control hazards by 99%+ and branch prediction reducing stalls by 67%.</li>
-</ul>
 </div>
 </div>
 
-<div class="cv-section">
-<h2>Skills</h2>
+<!-- ═══════════════ RESEARCH ═══════════════ -->
+<div class="cv-sec" id="research">
+<div class="cv-sec-title"><span class="icon">🔬</span> Research</div>
 
-<div class="skill-group">
-  <span class="skill-label">Languages</span>
-  <div class="skill-tags">
-    <span class="skill-tag">Python</span><span class="skill-tag">C/C++</span><span class="skill-tag">Java</span><span class="skill-tag">Go</span><span class="skill-tag">C#</span><span class="skill-tag">JavaScript</span><span class="skill-tag">SQL</span><span class="skill-tag">Scala</span><span class="skill-tag">Bash</span>
+<div class="timeline">
+
+<div class="tl-item">
+  <div class="tl-header">
+    <span class="tl-title">Rate Adaptation with LSTM · CUHKSZ</span>
+    <span class="tl-date">Aug 2023 – Apr 2024</span>
+  </div>
+  <ul>
+    <li>Proposed LSTM-based rate adaptation for 802.11 systems; achieved <span class="highlight">&gt;90% MCS prediction accuracy</span> across 8 transmission rates.</li>
+    <li>Built NS-3 simulation framework improving throughput by <span class="highlight">15%</span> in static scenarios and reducing convergence time by <span class="highlight">30%</span>.</li>
+  </ul>
+</div>
+
+<div class="tl-item">
+  <div class="tl-header">
+    <span class="tl-title">UAV Digital Twin · Shenzhen Institute of AI &amp; Robotics</span>
+    <span class="tl-date">Oct 2022 – Feb 2023</span>
+  </div>
+  <ul>
+    <li>Implemented ESP32-based digital twin in Unity with real-time 3D sync via asynchronous Bluetooth.</li>
+    <li>Built sensor fusion (MPU6050 accel/gyro + complementary filter) reducing motion tracking latency from <span class="highlight">1.5 s → 0.5 s</span>.</li>
+  </ul>
+</div>
+
+</div>
+</div>
+
+<!-- ═══════════════ PROJECTS ═══════════════ -->
+<div class="cv-sec" id="projects">
+<div class="cv-sec-title"><span class="icon">🛠</span> Projects</div>
+
+<div class="proj-grid">
+
+<div class="proj-card">
+  <div class="proj-title">LinkedIn Product Strategy &amp; Revenue Prediction</div>
+  <div class="proj-date">Feb 2025 · UMich Business+Tech &amp; Deloitte Datathon</div>
+  <div class="proj-desc">Processed 1M+ H-1B/PERM records, built premium subscription forecasting model, and designed Power BI dashboards. <strong>4th / 50+ teams</strong> — insight validated by LinkedIn's official feature rollout.</div>
+  <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Pandas</span><span class="proj-tag">Power BI</span><span class="proj-tag">ML</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-title">TCP Session Hijacking &amp; Adaptive Firewall</div>
+  <div class="proj-date">Mar – Apr 2024 · CUHKSZ</div>
+  <div class="proj-desc">Built KVM-based virtual cyber range with automated VLAN config. Developed Scapy-based TCP RST injection tool achieving <strong>91.4% success rate</strong>. Stateful firewall reduced attack surface by <strong>78%</strong>.</div>
+  <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Scapy</span><span class="proj-tag">KVM</span><span class="proj-tag">Network Security</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-title">STM32 Real-Time Bouncing Ball Game</div>
+  <div class="proj-date">Sep – Dec 2023 · CUHKSZ</div>
+  <div class="proj-desc">FSM-based real-time physics engine on STM32F4 with sub-pixel collision (±1px). ISR/DMA framebuffer at <strong>100 Hz refresh</strong>, <strong>10 ms input latency</strong>. UART validated via oscilloscope.</div>
+  <div class="proj-tags"><span class="proj-tag">C</span><span class="proj-tag">STM32</span><span class="proj-tag">Embedded</span><span class="proj-tag">PyQt5</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-title">Student Information Registration System</div>
+  <div class="proj-date">Oct – Dec 2023 · CUHKSZ</div>
+  <div class="proj-desc">Full-stack system with 3NF-normalized relational DB, JWT auth, and multi-role access control (student / admin). Responsive frontend with complete ER diagram and SQL documentation.</div>
+  <div class="proj-tags"><span class="proj-tag">SQL</span><span class="proj-tag">JWT</span><span class="proj-tag">JavaScript</span><span class="proj-tag">Full-Stack</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-title">OS Core Modules Simulation in C</div>
+  <div class="proj-date">Sep – Dec 2022 · CUHKSZ</div>
+  <div class="proj-desc">MLFQ process scheduler (−35% turnaround), virtual memory with TLB (<strong>89% hit rate</strong>), and FAT32-like FS with COW + fsck (&lt;8% fragmentation).</div>
+  <div class="proj-tags"><span class="proj-tag">C</span><span class="proj-tag">OS</span><span class="proj-tag">Systems</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-title">5-Stage Pipelined MIPS CPU</div>
+  <div class="proj-date">Jan – Apr 2022 · CUHKSZ</div>
+  <div class="proj-desc">32-bit MIPS CPU with 18 instructions, full hazard handling via forwarding unit (<strong>99%+ resolution</strong>) and branch prediction reducing stalls by <strong>67%</strong>.</div>
+  <div class="proj-tags"><span class="proj-tag">Verilog</span><span class="proj-tag">MIPS</span><span class="proj-tag">CPU Design</span></div>
+</div>
+
+</div>
+</div>
+
+<!-- ═══════════════ SKILLS ═══════════════ -->
+<div class="cv-sec" id="skills">
+<div class="cv-sec-title"><span class="icon">⚡</span> Skills</div>
+
+<div class="skill-row">
+  <span class="skill-cat sk-blue">Languages</span>
+  <div class="skill-chips">
+    <span class="skill-chip">Python</span><span class="skill-chip">C/C++</span><span class="skill-chip">Java</span><span class="skill-chip">Go</span><span class="skill-chip">C#</span><span class="skill-chip">JavaScript</span><span class="skill-chip">SQL</span><span class="skill-chip">Scala</span><span class="skill-chip">Bash</span>
   </div>
 </div>
-<div class="skill-group">
-  <span class="skill-label">ML / AI</span>
-  <div class="skill-tags">
-    <span class="skill-tag">PyTorch</span><span class="skill-tag">OpenCV</span><span class="skill-tag">CUDA</span><span class="skill-tag">HuggingFace</span><span class="skill-tag">Pandas</span><span class="skill-tag">Matplotlib</span>
+<div class="skill-row">
+  <span class="skill-cat sk-purple">ML / AI</span>
+  <div class="skill-chips">
+    <span class="skill-chip">PyTorch</span><span class="skill-chip">OpenCV</span><span class="skill-chip">CUDA</span><span class="skill-chip">HuggingFace</span><span class="skill-chip">Pandas</span><span class="skill-chip">Matplotlib</span>
   </div>
 </div>
-<div class="skill-group">
-  <span class="skill-label">Embedded</span>
-  <div class="skill-tags">
-    <span class="skill-tag">C/C++</span><span class="skill-tag">RTOS</span><span class="skill-tag">Verilog</span><span class="skill-tag">VHDL</span><span class="skill-tag">LabVIEW</span><span class="skill-tag">Virtuoso</span>
+<div class="skill-row">
+  <span class="skill-cat sk-orange">Embedded</span>
+  <div class="skill-chips">
+    <span class="skill-chip">RTOS</span><span class="skill-chip">Verilog</span><span class="skill-chip">VHDL</span><span class="skill-chip">LabVIEW</span><span class="skill-chip">Virtuoso</span><span class="skill-chip">Arduino</span><span class="skill-chip">EAGLE</span>
   </div>
 </div>
-<div class="skill-group">
-  <span class="skill-label">Web & Backend</span>
-  <div class="skill-tags">
-    <span class="skill-tag">Node.js</span><span class="skill-tag">React</span><span class="skill-tag">.NET</span><span class="skill-tag">REST API</span><span class="skill-tag">MongoDB</span><span class="skill-tag">MySQL</span><span class="skill-tag">Redis</span>
+<div class="skill-row">
+  <span class="skill-cat sk-green">Web & Backend</span>
+  <div class="skill-chips">
+    <span class="skill-chip">Node.js</span><span class="skill-chip">React</span><span class="skill-chip">.NET</span><span class="skill-chip">REST API</span><span class="skill-chip">MongoDB</span><span class="skill-chip">MySQL</span><span class="skill-chip">Redis</span>
   </div>
 </div>
-<div class="skill-group">
-  <span class="skill-label">Cloud & DevOps</span>
-  <div class="skill-tags">
-    <span class="skill-tag">AWS</span><span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span><span class="skill-tag">Linux</span><span class="skill-tag">Git</span>
+<div class="skill-row">
+  <span class="skill-cat sk-teal">Cloud & DevOps</span>
+  <div class="skill-chips">
+    <span class="skill-chip">AWS</span><span class="skill-chip">Docker</span><span class="skill-chip">Kubernetes</span><span class="skill-chip">Linux</span><span class="skill-chip">Git</span>
   </div>
 </div>
 </div>
 
-<div class="cv-section">
-<h2>Certification &amp; Leadership</h2>
+<!-- ═══════════════ LEADERSHIP ═══════════════ -->
+<div class="cv-sec" id="leadership">
+<div class="cv-sec-title"><span class="icon">🏆</span> Certification &amp; Leadership</div>
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">JLPT N1</span>
-  <span class="cv-entry-date">Dec. 2025</span>
-</div>
-<div class="cv-entry-sub">Score: 151/180 &nbsp;|&nbsp; CEFR Level: C1</div>
+<div class="cert-item">
+  <span class="cert-name">JLPT N1 &nbsp;<span class="badge badge-green">C1</span></span>
+  <span class="cert-detail">Score: 151 / 180 · Dec 2025</span>
 </div>
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">CUHKSZ IEEE Student Branch — Founder &amp; Vice Chair</span>
-  <span class="cv-entry-date">Jul. 2022 – Jun. 2024</span>
-</div>
-<ul>
-  <li>Founded the branch as core team leader; drove recruitment campaigns to attract 500+ members in the first academic year.</li>
-  <li>Hosted tech symposia for 400+ members and organized 10+ academic interviews and career-development lectures.</li>
-  <li>Launched a centralized online platform for IEEE academic resources, improving collaboration across 300+ active users.</li>
-</ul>
+<div class="timeline" style="margin-top:1em">
+<div class="tl-item">
+  <div class="tl-header">
+    <span class="tl-title">CUHKSZ IEEE Student Branch — Founder &amp; Vice Chair</span>
+    <span class="tl-date">Jul 2022 – Jun 2024</span>
+  </div>
+  <ul>
+    <li>Founded the branch; grew membership to <span class="highlight">500+</span> in the first academic year.</li>
+    <li>Hosted tech symposia for <span class="highlight">400+</span> members; organized <span class="highlight">10+</span> academic interviews and career lectures.</li>
+    <li>Launched centralized academic resource platform serving <span class="highlight">300+</span> active users.</li>
+  </ul>
 </div>
 
-<div class="cv-entry">
-<div class="cv-entry-header">
-  <span class="cv-entry-title">CUHKSZ ChemA Community — Founder &amp; Academic Department</span>
-  <span class="cv-entry-date">Jul. 2022 – Jun. 2023</span>
+<div class="tl-item">
+  <div class="tl-header">
+    <span class="tl-title">CUHKSZ ChemA Community — Founder &amp; Academic Dept.</span>
+    <span class="tl-date">Jul 2022 – Jun 2023</span>
+  </div>
+  <ul>
+    <li>Established CUHKSZ's first student-led chemistry hub; published articles reaching <span class="highlight">300+</span> readers.</li>
+    <li>Led lab immersion tours attracting <span class="highlight">100% more</span> freshman applicants year-over-year.</li>
+  </ul>
 </div>
-<ul>
-  <li>Established the first student-led chemistry hub at CUHKSZ; published two articles reaching 300+ readers.</li>
-  <li>Led lab immersion tours attracting 100% more freshman applicants compared to previous years.</li>
-</ul>
 </div>
 </div>
